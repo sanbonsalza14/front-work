@@ -1,0 +1,57 @@
+
+.container {
+  width: 600px;
+  height: 200px;
+  margin: 30px auto;
+  display: flex;
+  padding: 10px;
+  border: 3px solid red; /* 전체 빨간 상자 */
+  box-sizing: border-box;
+}
+
+.product-img {
+  background-image: url("../image/camera.JPG");
+  height: 100%;
+  width: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  float: left;
+  border: 3px solid blue; /* 파란 상자 */
+}
+
+.content {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+
+.title-box {
+  border: 3px solid red; /* 빨간 상자 1 */
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.location-box {
+  border: 3px solid red; /* 빨간 상자 2 */
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.bottom-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid red; /* 빨간 상자 3 */
+  padding: 5px;
+}
+
+.price-box {
+  font-weight: bold;
+}
+
+.like-box {
+  border: 2px solid green;
+  padding: 4px 8px;
+  border-radius: 5px;
+}

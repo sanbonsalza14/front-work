@@ -1,0 +1,33 @@
+/*태그 선택자 */
+/*html 문서의 모든 li 태그를 가림킴.*/
+li{
+  color:red;
+
+}
+
+/*크래스 선택자
+class 속성이 붙어있는 태그를 선택할 때 사용
+*/
+.orange{
+  color: orange;
+}
+.gold{
+  color: gold;
+}
+
+
+/*id 지정방법*/
+#object{
+  color: green;
+}
+
+/*하위(후손) 선택자 지정*/
+/*div > orange class*/
+/*하위 선택자는 공백으로 선택한다*/
+div .orange{
+  color: blue;
+}
+
+/*가사클래스 :hover */
+a .hover {color: green;
+}

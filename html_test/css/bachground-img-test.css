@@ -1,0 +1,8 @@
+.container{
+  width: 500px;
+  height: 500px;
+  background-image: url("../images/rose.JPG");
+  background-size: 200px;
+ background-repeat: no-repeat;
+ background-position: center;
+}
