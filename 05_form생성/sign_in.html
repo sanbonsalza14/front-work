@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>회원 가입을 환영합니다.</h1>
-    <form>
+    <form onsubmit="check_sign(event)">
       <fieldset>
         <legend>사용자 정보</legend>
         <ul>
@@ -69,5 +69,21 @@
       </div>
     </form>
   </div>
+  <script>
+    function check_sign(event){
+      event.preventDefault();
+      console.log("가입하기 단추 눌림")
+      let userId = document.querySelector("#uid");
+
+        //아이디 글자 쉬 확인 (4자~10자) 사이 
+        let idLength = userId.value.length;
+        if(idLength< 4 || idLength > 10){
+          alert("아이디는 4자~10자 사이입니다.");
+          userId.value = '';
+          userId.focus();
+          return;
+        }
+    }
+  </script>
 </body>
 </html>
