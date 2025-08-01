@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
-  <form action="post">
-    <button>Click</button>
-  </form>
+<style>
+table {
   
+  border-collapse: collapse; 
+  width: 500px;
+}
+th, td {
+    border: 1px solid #000;
+    text-align: center;
+}
+th {
+  background-color: #ddd;
+  color: blue;
+}
+
+td:first-child{
+  width: 30%;
+}
+
+td:nth-child(2) {
+  width: 20%;
+}
+
+th:last-child {
+  width:  50%;
+}
+</style>
+<body>
+  <!---테이블 먼저 생성-->
+  <table>
+    <caption>걸그룹 정보</caption>
+    <tr>
+      <th width="200">그룹명</th>
+      <th width="100">이름</th>
+      <th width="200" >나이</th>
+      <th>주소</th>
+    </tr>
+      <td rowspan="3">아이브</td>
+      <td>장원영</td>
+      <td>21</td>
+      <td>서울</td>
+    </tr>
+    </tr>
+      <td>안유진</td>
+      <td>22</td>
+      <td>서울</td>
+    </tr>
+    </tr>
+      <td>이서</td>
+      <td>20</td>
+      <td>대구</td>
+    </tr>
+
+  </table>
 </body>
+
 </html>
