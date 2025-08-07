@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./css/pnd.css">
+  <script src="./js/check_pnd.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <form onsubmit="check_sign(event)">
+      <fieldset>
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p><strong>HTML, CSS, Javascript</strong>에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <hr />
+
+        <h2>개인정보</h2>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="공백없이 입력하세요" />
+          </li>
+
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" name="phone" />
+          </li>
+        </ul>
+
+        <h2>지원 분야</h2>
+
+        <div class="radio-group">
+          <label><input type="radio" name="field" value="publishing" /> 웹 퍼블리싱</label>
+          <label><input type="radio" name="field" value="webapp" /> 웹 애플리케이션 개발</label>
+          <label><input type="radio" name="field" value="env" /> 개발 환경 개선</label>
+        </div>
+
+
+
+        <h2>지원동기</h2>
+        <ul>
+          <li>
+
+            <textarea id="memo" name="memo" placeholder="지원동기를 간략하게 써주세요" cols="40" rows="4"></textarea>
+          </li>
+        </ul>
+
+        <div class="buttons">
+          <button type="submit">접수하기</button>
+          <button type="reset">다시 쓰기</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

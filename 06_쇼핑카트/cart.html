@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .cart-background {
+      width: 100%;
+      background-color: #c2d3de;
+      padding: 30px;
+    }
+
+    .cart-table {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      border-collapse: collapse;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    .cart-table td,
+    .cart-table th {
+      padding: 15px;
+      border-bottom: 1px solid #c2d3de;
+    }
+
+    .cart-table th:nth-child(2) {
+      width: 400px;
+    }
+
+    .btn {
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-coral {
+      background-color: coral;
+      color: white;
+    }
+
+    .btn:hover {
+      background-color: chocolate;
+    }
+
+    .btn:focus {
+      background-color: gray;
+    }
+
+    .btn:active {
+      background-color: brown;
+    }
+
+    .input-test {
+      font-size: 20px;
+      height: 30px;
+    }
+
+    .input-test:focus {
+      border-bottom: 5px solid red;
+    }
+    .custom-link:visited {
+      color: black;
+    }
+
+    .f-small {
+      font-size: 12px;
+    }
+    .f-mid {
+      font-size: 16px;
+    }
+
+    .f-large {
+      font-size: 20px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="cart-background">
+    <h3>Your shopping Cart</h3>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Item</th>
+          <th>Amount</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./img/item1.png" style="width: 50px;" alt=""></td>
+          <td>스니커즈</td>
+          <td>1</td>
+          <td>7000</td>
+          <td>7000</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align: right;">총 가격 : 7000</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="order">
+      <button class="btn btn-coral f-large">구매하기</button>
+      <input type="text" class="input-test">
+      <a href="#" class="custom-link">링크</a>
+    </div>
+  </div>
+</body>
+
+</html>

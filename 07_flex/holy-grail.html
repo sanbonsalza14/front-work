@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction:column;
+    }
+    header{
+      border-bottom: 1px solid gray;
+      padding-left: 20px;
+    }
+    footer {
+      border-top: 3px solid gray;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      display: flex;
+    }
+
+    .content nav {
+       lex-basis:150px;
+      flex-shring: o;
+      border-right: 1px solid gray;
+     
+    }
+
+    .content aside {
+      flex-basis:150px;
+      flex-shring: o;
+      border-left:  1px solid gray;
+    }
+    main {
+      padding: 10px;
+      column-count: 4;
+      text-align: justify;
+      column-width: 200px;
+      column-gap: 30px;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+      column-rule-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        css로 만드는 수업 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Vero necessitatibus, fuga sequi odit iusto explicabo animi nisi, dolor perspiciatis
+          placeat assumenda veniam. Beatae obcaecati perspiciatis rem nulla reiciendis, at ducimus?
+      </main>
+      <aside>
+        AD(광고영역)
+      </aside>
+    </section>
+    <footer>
+      <a href="#">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -10,16 +10,14 @@ div {
   width: 100%;
   height: 500px;
   background-image: url("../images/shoes_background.jpg");
-  block-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 1px;
   position: relative;
-  text-align: center;
+    text-align: center;
 }
-
 .main-title {
-
   color: white;
   font-size: 40px;
   margin-top: 100px;
@@ -28,28 +26,27 @@ div {
 .main-content {
   color: white;
   margin-left: 20px;
-  margin-right: 80px;
+  margin-right: 20px;
 }
 
 .main-button {
   font-size: 20px;
   padding: 15px;
-  background-color: white;
+  background-color:white;
   border: none;
   border-radius: 5px;
   position: absolute;
-  /*부모의 정가운데 위지*/
+  /* 부모의 정가운데 위치 */
   left: 0;
   right: 0;
   width: 150px;
   margin: auto;
-  /*부모 내용 추가 시에도 고정위치 */
-  /* bottom: 150px;*/
+  /* 부모 내용 추가 시에도 고정위치 */
+  bottom: 150px;
 
-  /*부모의 우측 하단 */
-  /* bottom: 5px;
-  right: 20px;*/
-
+  /* 부모의 우측 하단 */
+  /* bottom: 20px; */
+  /* right: 20px; */
 }
 
 .explain-box {
@@ -73,12 +70,10 @@ div {
 }
 
 .text-deco::first-line {
-  color: yellowgreen;
+  color: blue;
 }
 
-div,
-input,
-textarea {
+div, input, textarea {
   box-sizing: border-box;
 }
 
@@ -95,7 +90,7 @@ textarea {
   margin: auto;
 }
 
-.rorm-input {
+.form-input {
   width: 100%;
   padding: 10px;
   font-size: 20px;
@@ -120,7 +115,6 @@ textarea {
   margin-left: auto;
   background-color: bisque;
   border: 1px solid #ddd;
-
 }
 
 .nav-container {
@@ -129,30 +123,97 @@ textarea {
   padding: 10px;
   align-items: center;
 }
-
-.nav-item {
+.nav-item{
   margin-right: 10px;
 }
 
-/* 현재 브라우저의 폭이  1200px 이하가 될때 적용할  css*/
-@media screen and (max-width: 1200px) {
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product-container > div {
+  flex: 1 1 25%;
+  /* flex : <flex-grow> <flex-shrink> <flex-basis> */
+}
+
+.product-container i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+  margin: 20px auto 10px auto;
+  display: block;
+}
+
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+.shop-container {
+  display:flex;
+  width: 90%;
+  margin: auto;
+}
+.shop-item {
+  width: 33%;
+  padding: 10px;
+  position: relative;
+}
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+}
+.overlay:hover {
+  opacity: 1;
+
+}
+
+/* 현재 브라우저의 폭이 1200px 이하가 될때 적용할 CSS */
+@media screen and (max-width: 1200px){
   .main-title {
     font-size: 30px;
-    ;
+  }
+  .product-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .product-container > div{
+    flex: 1 1 50%;
   }
 }
 
-/*폭이 768px 이하일때*/
-@media screen and (max-width: 768px) {
+/* 폭이 768px 이하 일 때 */
+@media screen and (max-width: 768px){
   .main-title {
     font-size: 20px;
-    ;
+  }
+  .product-container > div{
+    flex: 1 1 100%;
   }
 }
 
-@media screen and (max-width: 576px) {
+/* 폭이 768px 이하 일 때 */
+@media screen and (max-width: 576px){
   .main-title {
     font-size: 10px;
-    ;
   }
 }

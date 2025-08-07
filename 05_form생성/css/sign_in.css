@@ -1,49 +1,111 @@
+/* 기본 전체 컨테이너 */
 .container {
-  width: 600px;
-  margin: 10px auto;
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', '맑은 고딕', sans-serif;
+  color: #222;
 }
 
+/* fieldset 스타일 */
 fieldset {
+  border: 1px solid #aaa;
+  padding: 30px 40px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+/* 제목 */
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #444;
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 15px 0 25px;
+}
+
+/* 소제목 */
+h2 {
+  font-size: 16px;
+  margin: 25px 0 10px;
+  font-weight: bold;
+}
+
+/* ul, li 기본 정리 */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* 라벨과 인풋 줄 정렬 */
+li label {
+  width: 60px;
+  font-weight: bold;
+}
+
+/* 인풋 필드들 */
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: -70px;
+  padding: 5px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* 라디오 버튼 세로 정렬 */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 10px;
   margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+/* 텍스트 영역 */
+textarea {
+  width: 100%;
+  height: 90px;
+  resize: none;
 }
 
-ul li {
-  margin: 10px;
-  display: flex;
-  align-items: center;
-
-}
-
-li label { 
-  width: 120px;
-  font-weight: bold;
-  line-height: 35px;
-}
-
-input[type="text"], 
-input[type="password"],
-input[type="email"],
-select{ 
-  width: 300px;
-  height: 25px;
-}
+/* 버튼 영역 */
 .buttons {
-  width: 400px;
-  margin: 20px  auto;
-  text-align: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
 }
-.buttons input {
-  width: 120px;
-  height: 35px;
-  font-size: 16px;
-}
-.buttons input:hover {
-  background-color: rgb(55, 87, 76);
-  color: black;
+
+.buttons button {
   
+  width: 80px;
+  height: 25px;
+  background-color: #e0e0e0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #d2d2d2;
+  color: #0078ff;
 }

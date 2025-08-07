@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: powderblue;
+      height: 200px;
+      display: flex; /* flex 기본방향은 row */
+       
+      /* 주축정렬 - row 인경우 -> x축 */
+      justify-content: center;
+      /* 교차축정렬 -  row인경우 -> y축 */
+      align-items: center;
+
+    }
+    .item {
+      background-color: tomato;
+      color: white;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      align-content: center;
+
+    }
+
+  </style>
+</head>
+<body>
+  <!---------flex-glow : 창의 크기가 늘어날 비율을 지정-->
+  <div class="container">
+    <div class="item" style="flex-grow: 1;">1</div>
+     <div class="item" style="flex-grow: 5;">2</div>
+     <div class="item" style="flex-grow: 4;">3</div>
+  </div>
+  <h3>flex-basis</h3>
+  <!--basis 는 창 크기가 줄면 자기 사이즈를 희생-->
+  <div class="container">
+    <div class="item" style="flex-basis: 600px;">1</div>
+     <div class="item" style="flex-grow: 4;">2</div>
+     <div class="item" style="flex-grow: 1;">3</div>
+  </div>
+   <h3>flex-shrink</h3>
+  <!--shrink는 0 : 수축(줄어드는거 허용 않음)-->
+   <!--shrink는 1: 수축(줄어드는거 허용 )-->
+  <div class="container">
+    <div class="item" style="flex-basis: 600px;">1</div>
+     <div class="item" style="flex-basis: 200px; flex-shrink: 0;">2</div>
+     <div class="item" style="flex-basis: 200px; flex-shrink: 1;">3</div>
+  </div>
+</body>
+</html>

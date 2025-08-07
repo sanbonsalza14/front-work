@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: powderblue;
+      height: 200px;
+      display: flex; /* flex 기본방향은 row */
+       
+      /* 주축정렬 - row 인경우 -> x축 */
+      justify-content: center;
+      /* 교차축정렬 -  row인경우 -> y축 */
+      align-items: center;
+
+    }
+    .item {
+      background-color: tomato;
+      color: white;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      align-content: center;
+
+    }
+
+  </style>
+</head>
+<body>
+  <!---------flex-glow : 창의 크기가 늘어날 비율을 지정-->
+  <h3>문제1</h3>
+  <p>item1의 너비는 300px, item2 너비는 300px 일때
+    item1과 item2의 너비가 1:2 만큼 상대적으로 수축하도록 지정
+  </p>
+  <div class="container">
+    <div class="item" style="flex-grow: 400px; flex-shrink: 1;">1</div>
+     <div class="item" style="flex-grow: 400px; flex-shrink: 2;">2</div>
+  </div>
+  <h3>flex-basis</h3>
+  <p>item1의 너비는 400px, item2 너비는 400px dlfEo
+    item1과 item2의 너비가 1:2 만큼 상대적으로 늘어나도록 지정
+  </p>
+  <!--flex-glow-->
+  <div class="container">
+    <div class="item" style="flex-basis: 400px; flex-grow: 1;">1</div>
+     <div class="item" style="flex-basis: 400px; flex-grow: 2;">2</div>
+   
+  </div>
+
+</body>
+</html>
