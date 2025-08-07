@@ -17,11 +17,12 @@ div {
   position: relative;
   text-align: center;
 }
+
 .main-title {
-  
+
   color: white;
   font-size: 40px;
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 .main-content {
@@ -32,9 +33,9 @@ div {
 
 .main-button {
   font-size: 20px;
-  padding:15px;
+  padding: 15px;
   background-color: white;
-  border:none;
+  border: none;
   border-radius: 5px;
   position: absolute;
   /*부모의 정가운데 위지*/
@@ -43,14 +44,15 @@ div {
   width: 150px;
   margin: auto;
   /*부모 내용 추가 시에도 고정위치 */
- /* bottom: 150px;*/
-  
+  /* bottom: 150px;*/
+
   /*부모의 우측 하단 */
- /* bottom: 5px;
+  /* bottom: 5px;
   right: 20px;*/
- 
+
 }
-.explain-box{
+
+.explain-box {
   position: relative;
   top: -50px;
   width: 400px;
@@ -60,9 +62,9 @@ div {
   margin: auto;
 }
 
-.main-button:hover{
+.main-button:hover {
   color: red;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .text-deco::first-letter {
@@ -72,4 +74,85 @@ div {
 
 .text-deco::first-line {
   color: yellowgreen;
+}
+
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+.form-background {
+  background-color: black;
+  padding: 30px;
+}
+
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.rorm-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.w-100 {
+  width: 100%;
+  padding: 10px;
+}
+
+.w-50 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.yellow-button {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  background-color: bisque;
+  border: 1px solid #ddd;
+
+}
+
+.nav-container {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+/* 현재 브라우저의 폭이  1200px 이하가 될때 적용할  css*/
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 30px;
+    ;
+  }
+}
+
+/*폭이 768px 이하일때*/
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 20px;
+    ;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 10px;
+    ;
+  }
 }
