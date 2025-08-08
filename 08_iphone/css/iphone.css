@@ -1,0 +1,102 @@
+*{box-sizing: border-box;}
+html, body {margin: 0;}
+body { font-family: "Poppins", system-ui,
+   -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif; color:#222; }
+a { text-decoration: none; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  
+}
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 430px;
+  height: 540px;
+  
+  height: 540px;
+  background-image: url("../image/iphone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:  center bottom;
+  flex: 0 0 420px;
+}
+.hero .container{
+  padding-right: 24px;
+  flex-direction: column; 
+  
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: #fff;
+  /* 높이 여백을 명확히: 텍스트 위로, 아이폰 아래 뜨우기 */
+  min-height: 520px;
+  padding: 70px 0 70px;
+}
+
+.hero-content{
+  flex:1 1 520px;
+  max-width: 560px;
+  transform: translateY(-10px);
+}
+.hero-content h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  font-weight: 600;
+  
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 0 0 28px;
+  opacity: 0.60;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #2d2d2d;
+  color: #fff;
+  border-radius: 6px;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-9px);
+  opacity: 0.6;
+}
+
+
+.itro{
+  background: #fff;
+  padding: 0;
+}
+.intro-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.intro h2 {font-size:25px; font-weight: 600; margin-top: 100px; margin-bottom: -12px;}
+.intro p {font-size: 16px; opacity: 0.8;  }
+.btn-dark{background: #3a3a3a; margin-top: -20px;}
+
